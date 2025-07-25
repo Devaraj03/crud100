@@ -1,0 +1,1 @@
+web: gunicorn website.wsgi:application  # replace "website" with your main django project folder name

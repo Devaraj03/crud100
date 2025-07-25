@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}    
+<button style="margin-left: 10px;"><a href="{% url 'add' %}">Add</a></button>
+    <br/>
+    <br/>
+    <ol>
+        {% for book in book %}
+        <li><strong>BOOK NAME:</strong> {{book.name}}</li>
+        <br/>
+        <strong>AUTHOR:</strong> {{book.author}}
+        <br/>
+        <br/>
+    <button><a href="{% url 'update' book.pk %}">Update</a></button>
+    <button><a href="{% url 'delete' book.pk %}">Delete</a></button>
+        <hr>
+        </li>
+        {% endfor %}
+    </ol>
+{% endblock %}
