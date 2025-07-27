@@ -5,7 +5,7 @@
 {% block content %}  
 <div  class="">
     <div class="row">
-        <div class="col-3">
+        <div class="col-12">
 <button class="button"><a href="{% url 'add' %}">Add</a></button>
     <br/>
     <br/>
@@ -23,9 +23,9 @@
         {% endfor %}
     </ol>
     </div>
-    <div class="col-5">
+    <!-- <div class="col-5">
        <img src="{% static 'images/bookframe1.jpg' %}" style="width: 100%;border-radius: 10px;" alt="My Image">
     </div>
-    </div>  
+    </div>   -->
 </div>
 {% endblock %}
